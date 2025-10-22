@@ -1,0 +1,80 @@
+﻿ <html>
+	<head>
+        <meta charset="UTF-8">
+        <title>La pila di Volta</title>
+	</head>
+	<body>
+		<h1> id="inizio">La pila di Volta</h1>
+		<h2>La pila di Volta</h2>																										<!-- Vanno da h1 ad h6 -->
+		<h6>La pila di Volta</h6>
+		<span>Alessandro Volta</span> nel 1799 inventò la <b>pila</b>, il prototipo delle moderne <u>batterie</u><br>							<!-- <b> = grassetto, <u> = sottolineato -->
+		elettriche.<hr>																															<!-- <hr> = linea di spazio per tutta la pagina -->
+		<p>
+	    	In onore dello scienziato italiano, l'unità  di misura della differenza di potenziale elettrico prende il nome di <i>volt</i>
+			e il fenomeno che consente il funzionamento delle pile si chiama <i>effetto Volta</i>												<!-- <i> = corsivo -->
+		</p>
+		<h2>Bibliografia</h2>
+		<p>
+			Paolo Rossi, <blockquote>Storia della scienza moderna</blockquote>
+			Paolo Rossi, <q>Storia della scienza moderna</q><br>																				<!-- vedi TAG semantici a fondo pagina -->
+			Paolo Rossi, <cite>Storia della scienza moderna</cite>
+		</p>
+		Struttura:
+		<ul>																															<!-- <ul> = elenco puntato -->
+			<li>dischi di rame e zinco separati da cartone imbevuto.</li>
+			<li>Prima sorgente continua di corrente elettrica.</li>
+			<li>Base degli studi di elettrochimica.</li>
+			<li>Il volt prende il nome da Volta.</li>
+			<li>Gli ioni H<sub>3</sub>O<sup>+</sup> dell'acido si dirigono verso l'elettrodo di rame.</li>										<!-- <sub> = pendice , <sup> = apice -->
+		</ul>
+		Struttura:
+		<ol>																															<!-- <ol> = elenco numerato -->
+			<li>dischi di rame e zinco separati da cartone imbevuto.</li>
+			<li>Prima sorgente continua di corrente elettrica.</li>
+				<ol>																																	<!-- NB: è posibile creare liste dentro alle liste -->
+					<li>Voce 1</li>
+					<li>Prezzo: <s>99€</s> 89€.</li>																							<!-- <s> = barra le parole al suo interno (funziona anche con <del>) -->
+				</ol>
+			<li>Base degli studi di <del>elettrofisica</del> elettrochimica.</li>
+			<li>Il volt prende il nome <ins>da Volta</ins>.</li>																				<!-- <ins> = sottolineatura -->
+			<li>Gli ioni H<sub>3</sub>O<sup>+</sup> dell'acido si dirigono verso l'elettrodo di rame.</li>
+		</ol>
+		<dl>																															<!-- <dt> = lista di definizione , <dt> è l'argomento , <dd> le definizioni -->
+			<dt>Alessandro Volta</dt>
+			<dd>&Egrave l'inventore della pila.<dt>																							<!-- &Egrave = E' , &egrave = è -->
+			<dt>Elementi voltaici</dt>
+			<dd>Dischi di rame alternati a dischi di zinco</dd>
+		</dl>
+		<a href="https://it.wikipedia.org/wiki/Pila_di_Volta">Testo del link</a><br>													<!-- <a> serve per inserire link. Il link va messo dopo le virgolette dell'href-->
+		<a href="volta.html">Clicca qui </a><br>																						<!-- Questo cerca il file inserito e lo apre -->
+		<a href="temp/volta.html">Clicca qui </a><br>																					<!-- Cerca il file nella cartella temp ma, siccome non esiste nel PC, va in errore -->
+		<a href="../volta.html">Clicca qui </a><br>																						<!-- Qua cerca il file salendo di una cartella -->
+		<a href="temp0/volta.html">Clicca qui </a><br>
+		<a href="temp0/temp/volta.html">Temp 0 </a><br>																					<!-- Cerca nella cartella "temp0" la cartella "temp" e lì cerca il file "volta.html" -->
+		<a href="https://www.vallauri.it/temp0/temp/volta.html">Clicca qui</a><br>
+		<a href="https://www.lastampa.it/notizie.html">Clicca qui</a><br>																<!-- link con percorso assoluto (le pagine con https:// sono pagine esterne al percorso file della cartella) -->
+		<a href="https://it.wikipedia.org/wiki/Pila_di_Volta" target="_blank">Testo del link nuova finestra</a><br>						<!-- Il comando target="_blank" apre il link in una nuova finestra -->
+		<a href="index.html">Ricarica</a><br>																							<!-- Inserire un link della stessa pagina, fa si che la pagina enga ricricata -->
+		<a htrf="#inizio">Torna su</a>																									<!-- Serve a tornare a un punto definito della pagina (in questo caso "inizio") -->
+																																		<!-- Va inserito il tag id="inizio" per poter arrivare a quel punto (come se fosse un checpoint)-->
+		<a htrf="volte.html#inizio">Torna su</a>																						<!-- Il nome del file si può mettere ma è facoltativo -->																															
+	</body>
+</html>
+
+<!--
+
+TAG semantici (servono a fornire al browser informazioni extra sul testo presente nella pagina. Sono indispensabili in programmi terzi legati alla pagina wep, ad esempio gli screen reader.)
+
+<strong>		=	grassetto (la/ le parole inserite al suo interno hanno una forte importanza)
+<em> 			=	enfasi da dare su una determinata parola
+<blockquote>	=	citazioni
+<q>				=	citazioni tra ""
+<cite>			=	citazioni in corsivo (meno utilizzato [in disuso])
+<address>		=	contatti / numeri di telefono / indirizzi / e-mail...
+
+
+Nella cartella va inserito un file .html chiamato "index"!!!
+Va evitato di usare collegamenti con i '.' dentro (ES: non scrivere T.P.S.I.T.  ma TPSIT)
+Il percorso iniziale del pc (C:/) può essere omesso, in quanto i file sono per fora dentro il PC (C:/utente/Compito.html = utente/Compito.html)
+
+-->
